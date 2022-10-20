@@ -1,4 +1,5 @@
 
+//-----------START DYNAMIC OPTION-----------//
 async function dynamicOption(){
   regions.sort();
   regions.forEach((e)=>{
@@ -10,7 +11,9 @@ async function dynamicOption(){
   });
 }
 dynamicOption();
+//-----------END DYNAMIC OPTION-----------//
 
+//-----------START CHANGE MINTAQA WHILE RENDER OPTION-----------//
 function renderOptions(){
   regions.forEach(()=>{
     $("#select").addEventListener("change", (e)=>{
@@ -19,7 +22,9 @@ function renderOptions(){
   });
 };
 renderOptions()
+//-----------END CHANGE MINTAQA WHILE RENDER OPTION-----------//
 
+//-----------START RENDER CARDS-----------//
 async function renderData(){
   const API_URL = "https://islomapi.uz/api/present/";
 
@@ -37,7 +42,9 @@ async function renderData(){
   });
 };
 renderData();
+//-----------END RENDER CARDS-----------//
 
+//-----------START RENDER TIME-----------//
 async function renderDate(){
   const data = new Date();
   
@@ -49,3 +56,4 @@ async function renderDate(){
   },1000);
 } 
 renderDate();
+//-----------END RENDER TIME-----------//
