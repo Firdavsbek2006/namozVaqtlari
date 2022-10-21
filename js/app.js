@@ -48,8 +48,11 @@ renderData();
 async function renderDate(){
   const data = new Date();
   
-  $(".date_f").innerHTML = `${data.getDate()}-sana ${data.getMonth()}-oy ${data.getFullYear()}-yil`;
-  
+  const monthNames = ["yanvar", "fevral", "mart", "aprel", "may", "iyun",
+  "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"
+];
+
+  $(".date_f").innerHTML = `${data.getDate()}-${monthNames[data.getMonth()]} ${data.getFullYear()}-yil`;
   setInterval(()=>{
     const data = new Date();
     $(".date_s").innerHTML = `${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
