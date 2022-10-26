@@ -325,8 +325,7 @@ template {
 }
 
 body {
-  height: 100vh;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   font-family: "Jost", sans-serif;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
@@ -474,11 +473,25 @@ img {
   color: #FFFFFF;
 }
 
+.weeks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .main-wrapper {
   width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.week-name {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 .card {

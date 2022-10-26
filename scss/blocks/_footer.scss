@@ -1,8 +1,22 @@
+.weeks{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .main-wrapper{
     width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+.week-name{
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-size: 20px;
 }
 
 .card{
