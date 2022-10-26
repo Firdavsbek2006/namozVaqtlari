@@ -503,6 +503,7 @@ img {
   border-radius: 25px;
   border: none;
   text-align: center;
+  overflow: hidden;
 }
 
 .card__title {
@@ -517,6 +518,10 @@ img {
   margin-bottom: 21px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card img:hover {
+  transform: scale(1.2);
 }
 
 .card:first-child img {
